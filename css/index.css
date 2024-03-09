@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+img {
+  display: block;
+}
+.down {
+  text-align: center;
+  width: 100%;
+  padding-top: 0px;
+}
+.down a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down img {
+  width: 16rem;
+  display: block;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  animation: move 1.8s infinite;
+}
+/* .TopTG img {
+  width: 10%;
+  margin-top: -11%;
+  margin-bottom: 1%;
+  margin-left: 88%;
+} */
+.TopWs img {
+  width: 10%;
+  margin-top: -11.2%;
+  margin-bottom: 1%;
+  margin-left: 76%;
+}
+.run img {
+  width: 100%;
+  margin-bottom: 0.5%;
+}
+.swiper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.swiper .swiper-slide {
+  width: 100%;
+}
+.swiper .swiper-slide img {
+  width: 100%;
+}
+.top2 img {
+  margin-top: -2%;
+  margin-bottom: 0%;
+}
+.downtry {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 38px;
+  margin-top: 40px;
+  margin-bottom: -100px;
+}
+.down1 img {
+  margin-left: 3.5%;
+  margin-top: 1%;
+}
+.down2 img {
+  margin-left: 38%;
+  margin-top: -10%;
+}
+.down3 img {
+  margin-left: 71.5%;
+  margin-top: -4.5%;
+}
+
+.run1 img {
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+.Body img {
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 8%;
+}
+.down4 img {
+  margin-left: 70%;
+  margin-top: -165%;
+}
+.down5 img {
+  margin-left: 70%;
+  margin-top: 14%;
+}
+.down6 img {
+  margin-left: 70%;
+  margin-top: 14%;
+}
+.down7 img {
+  margin-left: 70%;
+  margin-top: 14%;
+}
+.down8 img {
+  margin-left: 70%;
+  margin-top: 13%;
+}
+.down9 img {
+  margin-left: 70%;
+  margin-top: 13%;
+}
+.down10 img {
+  margin-left: 70%;
+  margin-top: 13%;
+}
+.down11 img {
+  margin-left: 70%;
+  margin-top: 13%;
+}
+.run2 img {
+  width: 100%;
+  margin-top: 5%;
+}
+.TGChannel img {
+  width: 18%;
+  margin-top: -14%;
+  margin-left: 52%;
+}
+.WSChannel img {
+  width: 18%;
+  margin-top: -5.45%;
+  margin-left: 72%;
+}
+.down_ img {
+  width: 100%;
+  margin-top: 0.5%;
+}
+.note {
+  color: #fff;
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  text-align: left;
+}
+.note1,
+.note2 {
+  width: 100%;
+  padding: 0 5%;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  text-align: left;
+  position: absolute;
+}
+.note1 {
+  top: 10%;
+}
+.active {
+  color: #d5ba82;
+}
+.foot {
+  position: fixed;
+  width: 750px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+  box-sizing: border-box;
+  z-index: 99;
+}
+.foot a {
+  width: 100%;
+}
+.foot a img {
+  width: 100%;
+  display: block;
+}
+
+.TG {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  margin: auto;
+  z-index: 999;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.TG img {
+  width: 100%;
+}
+.WS {
+  position: fixed;
+  right: 0;
+  top: 47%;
+  margin: auto;
+  z-index: 999;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.WS img {
+  width: 100%;
+}
+.foot img {
+  width: 100%;
+}
+@keyframes moves2 {
+  0% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+@keyframes moves {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+ .content {
+  width: 750px;
+  /* min-height: 200px;
+  background: url("./img/bgelements.png") no-repeat 100% 0%/100% auto, #000000; */
+  margin: 0 auto;
+  padding-bottom: 0rem;
+  height: 100vh;
+} 
+.content .LOGO {
+  background-color: beige;
+}
+.down img {
+  width: 60%;
+}
+.top {
+  position: relative;
+}
+.top img {
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .content,
+  .foot {
+    width: 100%;
+  }
+}
+.alert {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.8);
+}
+.pop {
+  width: 694px;
+  height: 601px;
+  background: url(../img/pop.png);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 4;
+}
+
+.close {
+  width: 52px;
+  height: 51px;
+  background: url(../img/close.png);
+  margin-top: 2%;
+  margin-left: 90%;
+  cursor: pointer;
+}
+.close-button:hover {
+  transform: scale(1.1); /* 按下時放大效果 */
+}
+.pop_banner {
+  width: 647px;
+  height: 393px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.pop_banner .swiper-pagination-bullet,
+.banner .swiper-pagination-bullet {
+  background: #c96161;
+  width: 16px;
+  height: 16px;
+}
+.pop_banner .swiper-pagination-bullet-active,
+.banner .swiper-pagination-bullet-active {
+  background: #000000;
+}
+.banner .swiper-container .swiper-pagination {
+  bottom: -67px;
+}

@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.vipforall {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    background: url(../img/bgelements.png) center/cover no-repeat;
+    padding: 0;
+    position: relative;
+    height: 3095px;
+    display: block;
+    text-align: center;
+}
+/* section {
+    width: 750px;
+    max-width: 100%;
+    margin: 0 auto;
+} */
+
+.allvips {
+    margin-top: -46px;
+}
+
+.platforms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.platforms img {
+    padding: 10px;
+    margin: 10px;
+}
+
+.platforms img:last-child {
+    margin-top: 50px;
+}
+.allvips .element {
+    margin-right: -25rem;
+    margin-top: -10rem;
+}
+
+.lootbonus {
+    padding-bottom: 9rem;
+}
+
+.lootbonus .title {
+    margin: 50px 0 40px 0;
+}
+
+.lootbonus .allplatforms {
+    margin-bottom: 24px;
+}
+
+.pop {
+    width: 100%;
+    max-width: 750px;
+    height: 100vh;
+    background: url(../img/popup_img.png) center/cover no-repeat;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 4;
+  }
+  
+  .close {
+    width: 52px;
+    height: 51px;
+    background: url(../img/close.png) no-repeat;
+    margin-top: 2%;
+    margin-left: 90%;
+    cursor: pointer;
+  }
+  .close-button:hover {
+    transform: scale(1.1); /* 按下時放大效果 */
+  }
+  .pop_banner {
+    width: 647px;
+    height: 393px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .pop_banner .swiper-pagination-bullet,
+  .banner .swiper-pagination-bullet {
+    background: #c96161;
+    width: 16px;
+    height: 16px;
+  }
+  .pop_banner .swiper-pagination-bullet-active,
+  .banner .swiper-pagination-bullet-active {
+    background: #000000;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #c96161;
+    margin-bottom: -4px;
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto;
+  }
