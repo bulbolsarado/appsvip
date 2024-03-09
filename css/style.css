@@ -26,7 +26,7 @@ body {
     background: url(../img/bgelements.png) center/cover no-repeat;
     padding: 0;
     position: relative;
-    height: 3095px;
+    /* height: 3095px; */
     display: block;
     text-align: center;
 }
@@ -89,7 +89,7 @@ body {
     z-index: 20;
     width: 100%;
     max-width: 750px;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #000000e0;
 }
 
