@@ -15,6 +15,10 @@ body {
   
   overflow-x: hidden;
 }
+.header {
+  z-index: 10;
+  position: relative;
+}
 .vipforall {
     width: 100%;
     max-width: 750px;
@@ -25,6 +29,9 @@ body {
     height: 3095px;
     display: block;
     text-align: center;
+}
+.allvips-title {
+  margin-top: -4.1rem;
 }
 /* section {
     width: 750px;
@@ -42,6 +49,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-top: -1.5rem;
 }
 
 .platforms img {
@@ -49,11 +57,12 @@ body {
     margin: 10px;
 }
 
-.platforms img:last-child {
-    margin-top: 50px;
+.platforms a:last-child img {
+  margin-left: -5rem;
 }
+
 .allvips .element {
-    margin-right: -25rem;
+    margin-right: -18rem;
     margin-top: -10rem;
 }
 
@@ -80,7 +89,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 4;
+    z-index: 20;
   }
   
   .close {

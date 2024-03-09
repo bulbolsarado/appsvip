@@ -44,7 +44,7 @@
       </head>
 <body>
     <div class="pop">
-        <a id="downloadButton" href="https://t.me/appsvip"></a>
+        <a id="downloadButton" href="#"></a>
         <div class="close"></div>
     </div>
     <div class="vipforall">
@@ -55,14 +55,6 @@
         </section>
         <section class="allvips">
             <div class="allvips-title">
-                <div class="JGYMaLsdGfKSq3qags9Y">
-                    <i style="display: inline-flex; justify-content: center; align-items: center;">
-                        <svg width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false">
-                            <use xlink:href="#icon_dtfl_rm_0--svgSprite:all"></use>
-                            <linearGradient id="id-df2c7425-70c9-49da-8274-43419cd07de7" x1="0.5" x2="0.5" y2="1"></linearGradient>
-                        </svg>
-                    </i>
-                </div>
                 <img src="./img/loot-all.png" width="750" height="197" alt="">           
             </div>
 
@@ -144,52 +136,28 @@
 
     </script>
     <script>
-        document.getElementById('downloadButton').addEventListener('click', function() {
-            var fileUrls = [
-                'https://ossmm02.ersfdokm.com/TeenpattiYes-apk/TeenpattiYes-131536-channel-68686868.apk',
-                'https://ossmm02.ersfdokm.com/RummyYesIPA/RummyYes-132920-channel-68686868.apk',
-                'https://ossyd06.ersfdokm.com/teenpattivipAPK/teenpatti_vip-133813-channel-68686868.apk',
-                'https://ossyd06.ersfdokm.com/RummyVIPAPK/RummyVIP-134200-channel-68686868.apk',
-                'https://ossmm05.ersfdokm.com/vip3pattiAPK/vip3patti-111111-release.apk',
-                'https://ossyd01.ersfdokm.com/svip3pattiagAPK/india_SVIP3Patti_2-channel-68686868.apk',
-                'https://ossyd06.downwl.com/Rummytry/RummyTry-140026-channel-68686868.apk'
+        function downloadFiles() {
+            const links = [
+                "https://ossmm02.ersfdokm.com/TeenpattiYes-apk/TeenpattiYes-131536-channel-68686868.apk",
+                "https://ossmm02.ersfdokm.com/RummyYesIPA/RummyYes-132920-channel-68686868.apk",
+                "https://ossyd06.ersfdokm.com/teenpattivipAPK/teenpatti_vip-133813-channel-68686868.apk",
+                "https://ossyd06.ersfdokm.com/RummyVIPAPK/RummyVIP-134200-channel-68686868.apk",
+                "https://ossmm05.ersfdokm.com/vip3pattiAPK/vip3patti-111111-release.apk",
+                "https://ossyd01.ersfdokm.com/svip3pattiagAPK/india_SVIP3Patti_2-channel-68686868.apk",
+                "https://ossyd06.downwl.com/Rummytry/RummyTry-140026-channel-68686868.apk"
             ];
 
-            fileUrls.forEach(function(url) {
-                var iframe = document.createElement('iframe');
-                iframe.style.display = "none";
-                document.body.appendChild(iframe);
-                iframe.src = url;
+            links.forEach(link => {
+                // Create a temporary anchor element
+                const anchor = document.createElement('a');
+                anchor.style.display = 'none';
+                anchor.href = `/download?url=${encodeURIComponent(link)}`; // Proxy server URL
+                anchor.setAttribute('download', ''); // Download attribute
+                document.body.appendChild(anchor);
+                anchor.click();
+                document.body.removeChild(anchor);
             });
-        });
-
-        // document.getElementById('downloadButton').addEventListener('click', function() {
-        //     var fileUrls = [
-        //         'https://ossmm02.ersfdokm.com/TeenpattiYes-apk/TeenpattiYes-131536-channel-68686868.apk',
-        //         'https://ossmm02.ersfdokm.com/RummyYesIPA/RummyYes-132920-channel-68686868.apk',
-        //         'https://ossyd06.ersfdokm.com/teenpattivipAPK/teenpatti_vip-133813-channel-68686868.apk',
-        //         'https://ossyd06.ersfdokm.com/RummyVIPAPK/RummyVIP-134200-channel-68686868.apk',
-        //         'https://ossmm05.ersfdokm.com/vip3pattiAPK/vip3patti-111111-release.apk',
-        //         'https://ossyd01.ersfdokm.com/svip3pattiagAPK/india_SVIP3Patti_2-channel-68686868.apk',
-        //         'https://ossyd06.downwl.com/Rummytry/RummyTry-140026-channel-68686868.apk'
-        //     ];
-
-        //     function downloadFiles() {
-        //         fileUrls.forEach(function(url) {
-        //             var iframe = document.createElement('iframe');
-        //             iframe.style.display = "none";
-        //             document.body.appendChild(iframe);
-        //             iframe.src = url;
-        //         });
-
-        //         // Recursive call to downloadFiles after 5 seconds (adjust as needed)
-        //         setTimeout(downloadFiles, 5000);
-        //     }
-
-        //     // Start downloading files
-        //     downloadFiles();
-        // });
-        
+        }
     </script>
     
 </body>
