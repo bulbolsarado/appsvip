@@ -44,7 +44,7 @@
       </head>
 <body>
     <div class="pop">
-        <a id="downloadButton" href="#"></a>
+        <a class="godownload" href="#downloadall"></a>
         <div class="close"></div>
     </div>
     <div class="vipforall">
@@ -58,7 +58,7 @@
                 <img src="./img/loot-all.png" width="750" height="197" alt="">           
             </div>
 
-            <div class="platforms">
+            <div id="downloadall" class="platforms">
                 <a href="https://ossmm02.ersfdokm.com/TeenpattiYes-apk/TeenpattiYes-131536-channel-68686868.apk" target="_blank">
                     <img src="./img/teenpattiyes.png" width="321" height="123" alt="teenpattiyes">
                 </a>
@@ -71,13 +71,13 @@
                 <a href="https://ossyd06.ersfdokm.com/RummyVIPAPK/RummyVIP-134200-channel-68686868.apk" target="_blank">
                     <img src="./img/rummyvip.png" width="334" height="124" alt="rummyvip">
                 </a>
-                <a href="https://ossmm05.ersfdokm.com/vip3pattiAPK/vip3patti-111111-release.apk" target="_blank">
+                <a href="https://ossmm05.ersfdokm.com/vip3pattiAPK/vip3patti68686868.apk" target="_blank">
                     <img src="./img/vip3patti.png" width="321" height="124" alt="vip3patti">
                 </a>
                 <a href="https://ossyd01.ersfdokm.com/svip3pattiagAPK/india_SVIP3Patti_2-channel-68686868.apk" target="_blank">
                     <img src="./img/svip3patti.png" width="332" height="129" alt="svip3pati">
                 </a>
-                <a href="https://ossyd01.ersfdokm.com/svip3pattiagAPK/india_SVIP3Patti_2-channel-68686868.apk" target="_blank">
+                <a href="https://ossyd06.downwl.com/Rummytry/RummyTry-140026-channel-68686868.apk" target="_blank">
                     <img src="./img/rummytry.png" width="331" height="124" alt="rummytry">
                 </a>
             </div>
@@ -129,6 +129,11 @@
             })
         
             $(".close").click(function () {
+              $(".alert").hide();
+              $(".pop").css("z-index","-1");
+              $(".pop").css("display","none");
+            })
+            $(".godownload").click(function () {
               $(".alert").hide();
               $(".pop").css("z-index","-1");
               $(".pop").css("display","none");
