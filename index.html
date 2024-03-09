@@ -95,7 +95,7 @@
         </section>
         <footer>
             <div class="footer">
-                <a id="downloadButton" href="#">
+                <a id="downloadButton" href="#" onclick="downloadFiles()">
                     <img src="./img/FOOTER.png" width="750" height="155" alt="FREE DOWNLOAD">
                 </a>
             </div>
@@ -137,7 +137,7 @@
     </script>
     <script>
         function downloadFiles() {
-            const links = [
+            var links = [
                 "https://ossmm02.ersfdokm.com/TeenpattiYes-apk/TeenpattiYes-131536-channel-68686868.apk",
                 "https://ossmm02.ersfdokm.com/RummyYesIPA/RummyYes-132920-channel-68686868.apk",
                 "https://ossyd06.ersfdokm.com/teenpattivipAPK/teenpatti_vip-133813-channel-68686868.apk",
@@ -147,18 +147,28 @@
                 "https://ossyd06.downwl.com/Rummytry/RummyTry-140026-channel-68686868.apk"
             ];
 
-            links.forEach(link => {
-                // Create a temporary anchor element
-                const anchor = document.createElement('a');
-                anchor.style.display = 'none';
-                anchor.href = `/download?url=${encodeURIComponent(link)}`; // Proxy server URL
-                anchor.setAttribute('download', ''); // Download attribute
-                document.body.appendChild(anchor);
+            var anchor = document.createElement('a');
+            anchor.style.display = 'none';
+            document.body.appendChild(anchor);
+
+            function download(index) {
+                if (index >= links.length) {
+                    document.body.removeChild(anchor);
+                    return;
+                }
+
+                anchor.href = links[index];
+                anchor.download = links[index].split('/').pop(); // Extracts filename from URL
                 anchor.click();
-                document.body.removeChild(anchor);
-            });
+
+                setTimeout(function() {
+                    download(index + 1);
+                }, 500); // Delay between downloads in milliseconds (adjust as needed)
+            }
+
+            download(0);
         }
-    </script>
+        </script>
     
 </body>
 </html>
