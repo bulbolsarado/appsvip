@@ -154,7 +154,7 @@ body {
     background: #000000;
   }
 
-  footer {
+  .footer-main {
     position: fixed;
     bottom: 0;
     right: 0;
