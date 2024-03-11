@@ -114,10 +114,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 750px;
 }
 
 .pop a img {
   width: 100%;
+  max-width: 750px;
   height: auto;
   position: absolute;
     right: 0;
