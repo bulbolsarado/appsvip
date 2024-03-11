@@ -186,6 +186,13 @@ body {
     margin: 0 auto;
   }
 
+  .TG img {
+    position: fixed;
+    z-index: 9;
+    right: 2%;
+    bottom: 20%;
+  }
+
   @media only screen and (max-width: 751px)  {
     .pop a img {
       top: 20%;
